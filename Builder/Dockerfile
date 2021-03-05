@@ -10,9 +10,8 @@ RUN apk add --no-cache \
       nodejs \
       yarn \
       tzdata \
-      file \
-      curl-dev \
-      openssl-dev
+      file
+RUN apk add --update gcc musl-dev make curl-dev openssl-dev
 
 WORKDIR /app
 
